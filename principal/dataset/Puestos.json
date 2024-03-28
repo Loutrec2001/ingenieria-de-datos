@@ -1,0 +1,25 @@
+{
+	"name": "Puestos",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id_Cargo",
+				"type": "varchar"
+			},
+			{
+				"name": "Cargo",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Cargo"
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"name": "imputdepartamentos",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "df_departamentos.csv",
+				"container": "databricks"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Departamento",
+				"type": "String"
+			},
+			{
+				"name": "Id_Dep",
+				"type": "String"
+			}
+		]
+	}
+}
