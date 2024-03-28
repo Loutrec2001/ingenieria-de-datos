@@ -1,6 +1,7 @@
 {
 	"name": "Pipeline_ADLS_SQL",
 	"properties": {
+		"description": "Copia de Datos en Empleados",
 		"activities": [
 			{
 				"name": "Pipeline Empleados",
