@@ -1,0 +1,48 @@
+{
+	"name": "inputempleado",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "df_empleados.csv",
+				"container": "databricks"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Nombre",
+				"type": "String"
+			},
+			{
+				"name": "Edad",
+				"type": "String"
+			},
+			{
+				"name": "direccion",
+				"type": "String"
+			},
+			{
+				"name": "Correo",
+				"type": "String"
+			},
+			{
+				"name": "Departamento",
+				"type": "String"
+			},
+			{
+				"name": "Puesto",
+				"type": "String"
+			}
+		]
+	}
+}

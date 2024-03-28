@@ -1,0 +1,45 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id_Empleado",
+				"type": "varchar"
+			},
+			{
+				"name": "Nombre",
+				"type": "varchar"
+			},
+			{
+				"name": "Fecha_Nacimiento",
+				"type": "date"
+			},
+			{
+				"name": "Direccion",
+				"type": "varchar"
+			},
+			{
+				"name": "Correo",
+				"type": "varchar"
+			},
+			{
+				"name": "Departamento",
+				"type": "varchar"
+			},
+			{
+				"name": "Cargo",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Empleados"
+		}
+	}
+}
