@@ -58,9 +58,15 @@ si se posee cuenta de Azure se puede consultar el Notebook aquí: [Notebook Data
 
 ## DESAFIO #5: Desarrolle una API REST para consultar la view/query/report. Para el desarrollo de la API considere algún framework de Python, C#/.Net.
 
-* Para este paso se realizó la ejecución de la API a través de un [Notebook](API.ipynb) de Python con consultas en la página http://localhost:5000/api/... query, sin embargo, el puerto no permitió la ejecución. Se podría utilizar Azure App Web con el mismo codigo de Python pero faltan conocimiento de las conexiones para la ejecución del despliegue `pr ende el tiempo para leer la documentación y realizar el despliegue no es suficiente para la entrega del reto.
+* Para este paso se realizó la ejecución de la API a través de un [Notebook](API.ipynb) de Python con consultas en la página http://localhost:5000/api/... query, sin embargo, el puerto no permitió la ejecución. Se realiza entonces en Databricks utilizando Spark, primero llamamos la base de datos al notebook utlizando la conexión JDBC y las credenciales.
 
+    ![Conexión JDBC](JDBC.png)
 
+* Ahora realizamos las consultas con spark dentro del Notebook en databricks:  
+
+    ![Consulta en Databricks](ConsultaDatabricks.png)
+
+* Creamos un web app en azure para desplegar el codigo.
 
 ## DESAFIO #6: Mejore la implementación de la API realizando un despliegue que use contenedores (valide las distintas opciones que le brinda su nube). Considere una prueba de consumo a la API implementando o activando algún front de acceso para ejecutar la invocación a la view/query/report
 
