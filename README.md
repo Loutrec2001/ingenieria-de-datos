@@ -68,6 +68,20 @@ si se posee cuenta de Azure se puede consultar el Notebook aquí: [Notebook Data
 
 * Creamos un web app en azure para desplegar el codigo.
 
-## DESAFIO #6: Mejore la implementación de la API realizando un despliegue que use contenedores (valide las distintas opciones que le brinda su nube). Considere una prueba de consumo a la API implementando o activando algún front de acceso para ejecutar la invocación a la view/query/report
+## Segundo Punto
 
-* Punto no realizado
+* Para este punto no se udo utilizar el conector Odata Feed de Power BI por lo que se procedió a crear la base de datos dentro de Azure SQL database utilizando el Script de SQL de la base de datos. Aquí el [Script](/Parte%20II%20Power%20BI/instnwnd%20(Azure%20SQL%20Database).sql). Esta se aloja en Azure SQL Database.
+
+    ![Imagen Base NorthWind](/Parte%20II%20Power%20BI/SQL%20Base%20PowerBI.png)
+ 
+* Luego de creada la base de datos llamada PowerBI se realizó la conexión con SQL Server para generar el diagrama entidad relación y verificar de este modo las Foreign Key y las Primary Key de la base relacional.
+
+ ![SQL Server](/Parte%20II%20Power%20BI/ER%20Diagram.png)   
+ 
+ ![Diagrama Entidad Relación](/Parte%20II%20Power%20BI/Diagrama%20ER.jpg)   
+
+* Luego se conectó a Power BI a traves del servidor de Azure Data Base y se procesió a realizar el Dashboard. Se adjunta [Pdf](/Parte%20II%20Power%20BI/DashBoard%20NorthWind.pdf)
+
+* Adicionalmente se adjunta el [Dashboard](/Parte%20II%20Power%20BI/DashBoard%20NorthWind.pbix)   
+
+* Se crearon varias tablas utilizando DAX para realizar los KPI´s. 
