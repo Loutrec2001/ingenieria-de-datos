@@ -68,6 +68,12 @@ si se posee cuenta de Azure se puede consultar el Notebook aquí: [Notebook Data
 
 * Creamos un web app en azure para desplegar el codigo.
 
+
+### Video 
+
+* Demostración primera parte https://drive.google.com/file/d/1D5N3zZd_flWOvJqR5-gUNAyDqmYr3Bz3/view?usp=share_link
+
+
 ## Segundo Punto
 
 * Para este punto no se udo utilizar el conector Odata Feed de Power BI por lo que se procedió a crear la base de datos dentro de Azure SQL database utilizando el Script de SQL de la base de datos. Aquí el [Script](/Parte%20II%20Power%20BI/instnwnd%20(Azure%20SQL%20Database).sql). Esta se aloja en Azure SQL Database.
